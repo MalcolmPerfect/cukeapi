@@ -1,4 +1,4 @@
-package cukeskeleton.stepdef;
+package cukeapi.stepdef;
 
 import io.cucumber.java.Scenario;
 import io.cucumber.java.Before;
@@ -8,7 +8,8 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 public class Hooks {
-    //example of how to use hooks, note these can be tagged/ordered and also "after"
+    // example of how to use hooks, note these can be tagged/ordered and also
+    // "after"
 
     private static Logger logger = LogManager.getLogger(Hooks.class);
 
