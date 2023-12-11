@@ -16,4 +16,4 @@ jobs:
             mvn verify -D"cucumber.plugin=junit:target/cuke-test-results-xml/junit.xml"            
 
       - store_test_results:
-          path: ~/target/cuke-test-results-xml
+          path: target/cuke-test-results-xml
