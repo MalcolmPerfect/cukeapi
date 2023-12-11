@@ -2,8 +2,6 @@
 version: 2.1
 jobs:
   build:
-#   going with 3.11 means will take the latest of 3.11
-#   only need a small execution environment
     docker:
       - image: cimg/openjdk:21.0.0   
 
