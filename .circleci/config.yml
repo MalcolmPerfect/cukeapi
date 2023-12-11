@@ -1,0 +1,19 @@
+
+version: 2.1
+jobs:
+  build:
+#   going with 3.11 means will take the latest of 3.11
+#   only need a small execution environment
+    docker:
+      - image: cimg/openjdk:21.0.0   
+
+    steps:
+      - checkout
+
+      - run:
+          name: run tests
+          command: |
+            mvn verify -D"cucumber.plugin=junit:target/cuke-test-results-xml/junit.xml"            
+
+      - store_test_results:
+          path: ~/target/cuke-test-results-xml

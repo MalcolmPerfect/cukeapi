@@ -6,7 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features", plugin = { "pretty",
-        "json:target/cucumber.json" }, snippets = CucumberOptions.SnippetType.CAMELCASE, glue = "cukeapi.stepdef")
+                "json:target/cucumber-results.json",
+                "junit:target/cucumber-results.xml" }, snippets = CucumberOptions.SnippetType.CAMELCASE, glue = "cukeapi.stepdef")
 public class CucumberTest {
 
 }

@@ -6,7 +6,6 @@ import io.cucumber.java.en.When;
 
 import static org.junit.Assert.assertEquals;
 
-import java.net.URI;
 import java.util.Map;
 
 import org.apache.logging.log4j.Logger;
@@ -18,8 +17,6 @@ import org.springframework.test.context.ContextConfiguration;
 import cukeapi.CucumberSpringConfiguration;
 import io.cucumber.spring.CucumberContextConfiguration;
 import static io.restassured.RestAssured.*;
-import io.restassured.response.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 @CucumberContextConfiguration
